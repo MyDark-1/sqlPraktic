@@ -8,8 +8,8 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <table>
     <tr>
-        <th>Student Name</th>
-        <th>Group Name</th>
+        <th>Имя Студента</th>
+        <th>Группа</th>
     </tr>
     <?php foreach ($data as $row): ?>
         <tr>

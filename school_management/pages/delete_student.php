@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_student'])) {
 }
 ?>
 <form method="POST">
-    <label for="student_id">Student ID:</label>
+    <label for="student_id">Студент ID:</label>
     <input type="number" id="student_id" name="student_id" required>
     <button type="submit" name="delete_student">Delete Student</button>
 </form>

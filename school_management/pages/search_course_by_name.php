@@ -13,14 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['search_course'])) {
 }
 ?>
 <form method="POST">
-    <label for="course_name">Course Name:</label>
+    <label for="course_name">Курс:</label>
     <input type="text" id="course_name" name="course_name" required>
-    <button type="submit" name="search_course">Search</button>
+    <button type="submit" name="search_course">Поиск</button>
 </form>
 <?php if (!empty($data)): ?>
 <table>
     <tr>
-        <th>Student Name</th>
+        <th>Имя Студента</th>
     </tr>
     <?php foreach ($data as $row): ?>
         <tr>

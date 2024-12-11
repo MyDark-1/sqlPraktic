@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_group'])) {
 }
 ?>
 <form method="POST">
-    <label for="group_name">Group Name:</label>
+    <label for="group_name">Группа:</label>
     <input type="text" id="group_name" name="name" required>
-    <button type="submit" name="add_group">Add Group</button>
+    <button type="submit" name="add_group">Добавить группу</button>
 </form>

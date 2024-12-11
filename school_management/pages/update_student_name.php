@@ -10,9 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_name'])) {
 }
 ?>
 <form method="POST">
-    <label for="student_id">Student ID:</label>
+    <label for="student_id">Студент ID:</label>
     <input type="number" id="student_id" name="student_id" required>
-    <label for="new_name">New Name:</label>
+    <label for="new_name">Новое Имя:</label>
     <input type="text" id="new_name" name="new_name" required>
-    <button type="submit" name="update_name">Update Name</button>
+    <button type="submit" name="update_name">Обновить Имя</button>
 </form>

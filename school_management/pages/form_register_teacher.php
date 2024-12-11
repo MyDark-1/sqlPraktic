@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register_teacher'])) 
 }
 ?>
 <form method="POST">
-    <label for="teacher_name">Teacher Name:</label>
+    <label for="teacher_name">Имя Учителя:</label>
     <input type="text" id="teacher_name" name="teacher_name" required>
     <button type="submit" name="register_teacher">Register Teacher</button>
 </form>

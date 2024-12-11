@@ -9,5 +9,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['filter_group'])) {
 }
 ?>
 <form method="POST">
-    <label for="group_id">Group ID:</label>
+    <label for="group_id">Группа ID:</label>
     <input type="number" id="

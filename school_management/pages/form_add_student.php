@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_student'])) {
 }
 ?>
 <form method="POST">
-    <label for="name">Student Name:</label>
+    <label for="name">Имя Студента:</label>
     <input type="text" id="name" name="name" required>
-    <button type="submit" name="add_student">Add Student</button>
+    <button type="submit" name="add_student">Добавить Студента</button>
 </form>

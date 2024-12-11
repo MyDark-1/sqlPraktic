@@ -7,7 +7,7 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <table>
     <tr>
         <th>ID</th>
-        <th>Name</th>
+        <th>Имя</th>
     </tr>
     <?php foreach ($data as $student): ?>
         <tr>

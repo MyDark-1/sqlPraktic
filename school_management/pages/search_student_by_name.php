@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['search_student'])) {
 <?php if (!empty($data)): ?>
 <table>
     <tr>
-        <th>Student Name</th>
-        <th>Group Name</th>
+        <th>Имя Студента</th>
+        <th>Группа</th>
     </tr>
     <?php foreach ($data as $row): ?>
         <tr>

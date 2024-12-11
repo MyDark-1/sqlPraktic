@@ -9,8 +9,8 @@ $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <table>
     <tr>
-        <th>Course Name</th>
-        <th>Student Count</th>
+        <th>Курс</th>
+        <th>Студент</th>
     </tr>
     <?php foreach ($data as $row): ?>
         <tr>

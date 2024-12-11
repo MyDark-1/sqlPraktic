@@ -8,13 +8,13 @@
 </head>
 <body>
     <nav>
-        <a href="pages/form_add_student.php">Add Student</a>
-        <a href="pages/list_students.php">View Students</a>
-        <a href="pages/form_add_group.php">Add Group</a>
-        <a href="pages/bind_student_to_group.php">Assign Student to Group</a>
-        <a href="pages/students_with_groups.php">View Students & Groups</a>
-        <a href="pages/register_student_to_course.php">Register to Course</a>
-        <a href="pages/courses_with_student_count.php">Courses</a>
+        <a href="pages/form_add_student.php">Добавить Студента</a>
+        <a href="pages/list_students.php">Смотреть список студентов</a>
+        <a href="pages/form_add_group.php">Добавить группу</a>
+        <a href="pages/bind_student_to_group.php">Назначить студента в группу</a>
+        <a href="pages/students_with_groups.php">Смотреть студентов и группы</a>
+        <a href="pages/register_student_to_course.php">Регистрация в курсы</a>
+        <a href="pages/courses_with_student_count.php">Курсы</a>
     </nav>
     <h1>Welcome to the School Management System</h1>
 </body>
