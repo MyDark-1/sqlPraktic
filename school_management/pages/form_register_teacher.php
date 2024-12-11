@@ -1,15 +1,21 @@
 <?php
 require_once '../database.php';
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register_teacher'])) {
-    $teacher_name = $_POST['teacher_name'];
-    $sql = "INSERT INTO teachers (name) VALUES (:teacher_name)";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute(['teacher_name' => $teacher_name]);
-    echo "Teacher registered successfully!";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+
+    try {
+        $sql = "INSERT INTO teachers (name, email, subject) VALUES (:name, :email, :subject)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            'name' => $name,
+            'email' => $email,
+            'subject' => $subject
+        ]);
+        echo "Teacher registered successfully!";
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
 }
 ?>
-<form method="POST">
-    <label for="teacher_name">Имя Учителя:</label>
-    <input type="text" id="teacher_name" name="teacher_name" required>
-    <button type="submit" name="register_teacher">Register Teacher</button>
-</form>

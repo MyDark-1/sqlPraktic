@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register_course'])) {
     $sql = "INSERT INTO student_courses (student_id, course_id) VALUES (:student_id, :course_id)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['student_id' => $student_id, 'course_id' => $course_id]);
-    echo "Student registered to course successfully!";
+    echo "Студент успешно зарегистрирован на курсе";
 }
 ?>
 <form method="POST">

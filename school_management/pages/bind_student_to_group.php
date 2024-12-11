@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bind_student'])) {
     $sql = "UPDATE students SET group_id = :group_id WHERE id = :student_id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['group_id' => $group_id, 'student_id' => $student_id]);
-    echo "Student bound to group successfully!";
+    echo "Студент успешно добавлен в группу!";
 }
 ?>
 <form method="POST">

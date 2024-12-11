@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_group'])) {
     $sql = "INSERT INTO groups (name) VALUES (:name)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['name' => $name]);
-    echo "Group added successfully!";
+    echo "Группа добавлена успешно!";
 }
 ?>
 <form method="POST">

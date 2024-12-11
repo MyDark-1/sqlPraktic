@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_student'])) {
     $sql = "INSERT INTO students (name) VALUES (:name)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['name' => $name]);
-    echo "Student added successfully!";
+    echo "Студент добавлен успешно!";
 }
 ?>
 <form method="POST">

@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_name'])) {
     $sql = "UPDATE students SET name = :new_name WHERE id = :student_id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['new_name' => $new_name, 'student_id' => $student_id]);
-    echo "Student name updated successfully!";
+    echo "Студент успешно обновлён!";
 }
 ?>
 <form method="POST">

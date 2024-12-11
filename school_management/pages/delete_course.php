@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_course'])) {
     $sql = "DELETE FROM courses WHERE id = :course_id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['course_id' => $course_id]);
-    echo "Course deleted successfully!";
+    echo "Курс успешно удалён!";
 }
 ?>
 <form method="POST">
